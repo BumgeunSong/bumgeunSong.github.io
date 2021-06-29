@@ -1,45 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!--Googe Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Carousel Project</title>
+    <title>Bumgeun's Projects</title>
   </head>
-
   <body>
-    <section>
-      <h1>Carousel</h1>
-
-      <!-- Carousel Start -->
-
-      <div class="slides">
-        <span class="arrow-left"></span>
-        <img src="images/image-1.png" width="600px;" />
-        <span class="arrow-right"></span>
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="img/name_logo.jpg" alt="logo" class="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
       </div>
-
-      <div class="dots">
-        <button class="dot active" value="0"></button>
-        <button class="dot" value="1"></button>
-        <button class="dot" value="2"></button>
-        <button class="dot" value="3"></button>
-        <button class="dot" value="4"></button>
-        <button class="dot" value="5"></button>
+    </nav>
+    <header>
+      <div class="profile-img">
+        <img src="./img/Eddy_centered.png" alt="" width="180px" />
       </div>
-
-      <!-- Carousel End -->
-    </section>
-
-    <script src="index.js"></script>
+      <div class="profile-info"> 
+        <h2>I'm Bumgeun Song</h1>
+        <h3>송범근입니다</h2>
+          <ul class="social-icon">
+              <li>
+                  <a href="https://www.github.com">
+                  <i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.notion.so/bumgeunsong/a2811b10191247e59342bcdcc7ac4d43">
+                <i class="fas fa-clipboard-list"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/bumgeun.eddy.song/">
+                  <i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://brunch.co.kr/@bumgeunsong">
+                <img src="./img/brunch_icon.png" alt="brunch" width="24px"></a>
+              </li> 
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span class="mail">isp1195@gmail.com</span></a>
+              </li>
+          </ul>
+      </div> 
+    </header>
+    <main class='projects'>
+        <div class="project-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="underline">
+        </div>
+        
+        <section class="project-container">
+        </section>
+    </main>
+    
   </body>
+  <script src="./app.js"></script>
 </html>
