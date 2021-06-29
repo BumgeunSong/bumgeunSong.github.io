@@ -28,7 +28,7 @@ const projects = [
         title: 'KY Player',
         content: '키보드로 사용하는 이경영 성대모사 재생기',
         imgUrl: './img/ky-player.png',
-        url: './KY-Player/index.html'
+        url: './KY-Player'
     },
     {
         title: 'Flex Panel',
