@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Panels</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+</body>
+
+<div class="panels">
+    <div class="panel panel1">
+        <p>히시바라</p>
+        <p>이노스케</p>
+        <p>"저돌맹진!"</p>
+    </div>
+    <div class="panel panel2">
+        <p>아가츠마</p>
+        <p>젠이츠</p>
+        <p>네가 목숨보다 소중한 거라고 해서...끝까지 지켜냈어.</p>
+    </div>
+    <div class="panel panel3">
+        <p>카마도</p>
+        <p>탄지로</p>
+        <p>"똑바로 앞을 쳐다봐라!!"</p>
+    </div>
+    <div class="panel panel4">
+        <p>카마도</p>
+        <p>네즈코</p>
+        <p>"음음!!"</p>
+    </div>
+    <div class="panel panel5">
+        <p>렌고쿠</p>
+        <p>쿄쥬로</p>
+        <p>"여기에 있는 자는 그 누구도 죽게 내버려두지 않아!"</p>
+    </div>
+</div>
+
+<script>
+    const panels = document.querySelectorAll(".panel");
+
+    function toggleOpen() {
+        panels.forEach(panel => panel.classList.remove('open'));
+        this.classList.toggle('open');   
+    }
+
+    function toggleActive(event) {
+        if (event.propertyName === "flex-grow") {
+            this.classList.toggle('open-active');
+        }
+
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+</script>
+
+</html>

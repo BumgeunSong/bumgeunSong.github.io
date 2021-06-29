@@ -22,49 +22,49 @@ const projects = [
         title: 'Momentum Clone',
         content: '랜덤 배경화면, 현재 시간, 투두리스트, 랜덤 인용구, 날씨 보여주기',
         imgUrl: './img/momentum_clone.png',
-        url: './bumgeun-momentum/index.html'
+        url: './project_momuentum'
     },
     {
         title: 'KY Player',
         content: '키보드로 사용하는 이경영 성대모사 재생기',
         imgUrl: './img/ky-player.png',
-        url: './KY-Player'
+        url: './project_player'
     },
     {
         title: 'Flex Panel',
         content: 'Flexbox를 사용한 귀멸의칼날 캐릭터 소개 페이지',
         imgUrl: './img/panel.png',
-        url: './flex_panel/index.html'
+        url: './project_panel'
     },
     {
         title: 'Photo Carousel',
         content: '화살표와 닷으로 이미지 돌려보기',
         imgUrl: './img/carousel.png',
-        url: './carousel/index.html'
+        url: './project_carousel'
     },
     {
         title: 'Mood Calendar',
         content: '현재 날짜를 표시하고 그날 기분을 기록할 수 있는 캘린더',
         imgUrl: './img/mood_calendar.png',
-        url: './mood_calendar/index.html'
+        url: './project_calendar'
     },
     {
         title: 'Search Bar',
         content: '도시 이름을 검색하면 결과를 미리 보여주는 서치 바',
         imgUrl: './img/search_bar.png',
-        url: './search-suggestion-practice/index.html'
+        url: './project_search'
     },
     {
         title: 'Review Carousel',
         content: '리뷰를 돌려볼 수 있는 캐러셀',
         imgUrl: './img/review_carousel.png',
-        url: './review_carousel/index.html'
+        url: './project_review'
     },
     {
         title: 'Disney Quote Modal',
         content: '디즈니 명대사를 모여주는 모달창',
         imgUrl: './img/disney_modal.png',
-        url: './disney_modal/index.html'
+        url: './project_modal'
     },
 ]
 
