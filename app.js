@@ -1,13 +1,3 @@
-// Navigation Toggle
-
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.links');
-
-function onToggle  () {
-    navLinks.classList.toggle('show-links');
-}
-
-navToggle.addEventListener('click', onToggle);
 
 // Load Project
 
@@ -22,7 +12,7 @@ const projects = [
         title: 'Momentum Clone',
         content: '랜덤 배경화면, 현재 시간, 투두리스트, 랜덤 인용구, 날씨 보여주기',
         imgUrl: './img/momentum_clone.png',
-        url: './project_momuentum/index.html'
+        url: './project_momentum/index.html'
     },
     {
         title: 'KY Player',
@@ -68,40 +58,41 @@ const projects = [
     },
 ]
 
-let projectContainer = document.querySelector('.project-container');
+let project = document.querySelector('section.row');
 
 function createProject (item) {
-    let project = document.createElement("div");
-    project.classList.add('project');
-
-    let imgContainer = document.createElement("div");
-    imgContainer.classList.add('img-container');
+    let card = document.createElement("div");
+    card.classList.add('col-md-6', 'col-xl-4', 'card');
 
     let projectLink = document.createElement('a');
     projectLink.href = item.url;
 
+    
+
     let img = document.createElement('img');
+    img.classList.add('card-img-top');
     img.src = item.imgUrl;
     img.alt = item.title;
 
-    let footer = document.createElement('div');
-    footer.classList.add('footer');
+    projectLink.appendChild(img);
+    card.appendChild(projectLink);
+
+    let cardBody = document.createElement('div');
+    cardBody.classList.add('card-body', 'text-center');
 
     let title = document.createElement('h3');
+    title.classList.add('card-title');
     title.textContent = item.title;
 
     let content = document.createElement('p');
+    content.classList.add('card-text');
     content.textContent = item.content;
 
-    projectLink.appendChild(img);
-    imgContainer.appendChild(projectLink);
-    project.appendChild(imgContainer);
+    cardBody.appendChild(title);
+    cardBody.appendChild(content);
+    card.appendChild(cardBody);
 
-    footer.appendChild(title);
-    footer.appendChild(content);
-    project.appendChild(footer);
-
-    projectContainer.appendChild(project);
+    project.appendChild(card);
 }
 
 document.addEventListener('DOMContentLoaded', createAllProject);
